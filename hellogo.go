@@ -29,7 +29,7 @@ func main() {
 		signedSixtyFourBitIntegerValue,
 		floatThirtyTwoValue,
 		floatSixtyFourValue,
-		boolValue := returnTwoValue(people)
+		boolValue := returnMultiValues(people)
 	fmt.Println(
 		"get value by attribute: ", peopleInstance.name, "\n",
 		"String: ", stringValue, "\n",
@@ -88,7 +88,7 @@ func changeValueUsingPointer(x *int) {
 }
 
 //function that returns n values
-func returnTwoValue(people People) (People, string, int, uint8, uint16, uint32, uint64, int8, int16, int32, int64, float32, float64, bool) {
+func returnMultiValues(people People) (People, string, int, uint8, uint16, uint32, uint64, int8, int16, int32, int64, float32, float64, bool) {
 	people.name = "Shahidul Islam"
 	people.email = "www.zeromsi2@gmail.com"
 	people.phone = 1743756128
